@@ -77,6 +77,8 @@ def get_all_cafe():
     }
     return jsonify(all_cafes_dict)
 
+
+
 @app.route("/search")
 def get_cafe_by_location():
     query_location = request.args.get('loc')
